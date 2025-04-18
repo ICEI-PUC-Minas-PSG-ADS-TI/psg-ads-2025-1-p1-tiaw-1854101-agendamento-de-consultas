@@ -8,47 +8,18 @@
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em
-se desenvolver profissionalmente através de um mestrado fora do país,
-pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está
-buscando uma agência que o ajude a encontrar universidades na Europa
-que aceitem alunos estrangeiros.
 
-
-> Enumere e detalhe as personas da sua solução. Para
-> tanto, baseie-se tanto nos documentos disponibilizados na disciplina
-> e/ou nos seguintes links:
->
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-> Lembre-se que você deve ser enumerar e descrever precisamente e
-> personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+|EU COMO... | QUERO/PRECISO ... `FUNCIONALIDADE`                                        | PARA ... `MOTIVO/VALOR`                |
+|-----------|---------------------------------------------------------------------------|----------------------------------------|
+|PACIENTE   | Quero receber notificações sobre consultas e horários de medicação        | Para obter atendimento sem precisar me deslocar.                |
+|PACIENTE   | Quero ter a opção de realizar consultas online com médicos                |Para evitar esquecimentos e seguir corretamente meu tratamento   |
+|MÉDICO     | Quero visualizar o histórico de atendimentos e exames dos meus pacientes  |Para acompanhar a recuperação do paciente com cautela e                                                                                       |e proximidade.                                                   |
+|MÉDICO     | Quero lembretes de manter contato com pacientes de casos mais graves      |Para tomar decisões mais assertivas no diagnóstico e tratamento. |
 
 ## Requisitos
 
@@ -56,36 +27,43 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+Código	|Requisito	                                       |Prioridade |
+|-------|--------------------------------------------------|-----------|
+#RF001	|Deve permitir cadastro de usuários	               | Alta
+#RF002	|Deve permitir o Login do usuário já existente	   | Alta
+#RF003	|Deve permitir editar o perfil de Usuário	       | Média
+#RF004	|"Troca de mensagens, via ChatBot"	               | Média
+#RF005	|Troca de mensagens com profissional	           | Alta
+#RF006	|Permitir cancelar agendamento	                   | Alta
+#RF007	|Permitir fazer mais de um agendamento	           | Alta
+#RF008	|Visualizar o Histórico de Consultas	           | Média
+#RF009	|Permitir ver perfis dos profissionais que atuam   | Média
+#RF010	|Permitir pacientes avaliarem profissionais	       | Baixa
+#RF011	|Permitir profissionais auxiliarem os pacientes	   | Alta
+#RF012	|Permitir pagamentos online	                       | Alta
+#RF013	|Busca por um determinado profissional	           | Média
+#RF014	|Busca por um determinado tipo de consulta	       | Média
+
 
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-> Com base nas Histórias de Usuário, enumere os requisitos da sua
-> solução. Classifique esses requisitos em dois grupos:
->
-> - [Requisitos Funcionais
->   (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na
->   plataforma (ex: cadastro de usuário).
->
-> - [Requisitos Não Funcionais
->   (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade,
->   desempenho, confiabilidade, segurança ou outro (ex: suporte a
->   dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma
-> característica alvo da sua solução. Além disso, certifique-se de que
-> todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+Código	| Requisito	                                                            | Prioridade  |
+|-------|-----------------------------------------------------------------------|-------------|
+#RNF001	| Em que ser acessível em Navegador	                                    |  Alta
+#RNF002	| O APP tem que sempre estar funcionando	                            |  Alta
+#RNF003	| Os Feedbacks devem ser registrados	                                |  Média
+#RNF004	| Deve ser acessível para usuários sem conhecimento técnico	            |  Média
+#RNF005	| Fornecer suporte de Idiomas	                                        |  Baixa
+#RNF006	| Deve funcionar com conexão baixa	                                    |  Alta
+#RNF007	| Deve ser possível iniciar sem acesso à Internet	                    |  Média
+#RNF008	| Deve haver proteção de dados	                                        |  Alta
+#RNF009	| Não deve ocupar muito armazenamento	                                |  Média
+#RNF010	| O sistema deve operar mesmo com falhas	                            |  Alta
+#RNF011	| O usuário deve ter a possibilidade de alterar temas e notificações	|  Baixa
+#RNF012	| Deve permitir o backup de arquivos	                                |  Média
+#RNF013	| "Deve ser feito em HTML, CSS, JS"	                                    |  Baixa
+#RNF014	| Deve permitir atualização sem perda de dados	                        |  Alta
 
 ## Restrições
 
@@ -100,6 +78,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 > Enumere as restrições à sua solução. Lembre-se de que as restrições
 > geralmente limitam a solução candidata.
 > 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+
