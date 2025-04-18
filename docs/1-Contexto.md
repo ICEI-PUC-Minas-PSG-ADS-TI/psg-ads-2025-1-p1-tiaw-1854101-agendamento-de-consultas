@@ -1,61 +1,40 @@
 # Introdução
+Hoje em dia, com a correria do dia a dia e o avanço da tecnologia, ficou cada vez mais importante facilitar o acesso a serviços de saúde. Muita gente ainda perde tempo tentando marcar uma consulta por telefone, enfrentando filas ou tendo que se deslocar só para pegar uma receita ou um laudo médico.
+
+Pensando nisso, surgiu a ideia de criar um aplicativo que ajude a resolver esses problemas, permitindo que as pessoas agendem consultas, façam atendimentos online e solicitem documentos médicos direto do celular ou computador, de forma simples e rápida.
 
 ## Problema
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Apesar de já existirem alguns sistemas de agendamento, muitos ainda são pouco práticos, difíceis de usar ou não oferecem todas as funcionalidades que o paciente precisa.
+
+Além disso, em muitos casos, o paciente precisa ir até o consultório só para pegar uma receita ou um laudo, mesmo já tendo feito a consulta. Isso é um transtorno, principalmente para quem tem dificuldade de locomoção, mora longe ou simplesmente tem uma rotina apertada.
+
 
 ## Objetivos
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo principal é desenvolver um aplicativo completo e fácil de usar, que permita:
+Agendar consultas presenciais ou online com médicos e outros profissionais de saúde;
+
+* Realizar consultas por vídeo chamada diretamente pelo app;
+* Solicitar e receber receitas e laudos médicos de forma digital;
+* Acompanhar o histórico de atendimentos e documentos, tudo em um só lugar.
+
+A ideia é que o app funcione tanto no celular quanto no computador, com uma interface simples, moderna e segura para todos os usuários.
 
 ## Justificativa
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Depois da pandemia, ficou claro como a tecnologia pode (e deve) ser usada a favor da saúde. A telemedicina ganhou força, e muita gente percebeu que nem sempre é necessário sair de casa para resolver questões médicas.
+
+Esse projeto vem justamente para atender essa nova realidade, oferecendo mais praticidade e acessibilidade para quem precisa de atendimento médico, além de otimizar o tempo dos profissionais da saúde.
+
+Também é uma ótima forma de aplicar, na prática, os conhecimentos adquiridos no curso, passando por todas as etapas de desenvolvimento de um sistema real: desde o planejamento até a entrega final.
+
 
 ## Público-Alvo
 
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
- 
+O aplicativo é pensado principalmente para:
+Pacientes que querem mais praticidade no dia a dia;
+
+* Pessoas com dificuldade de locomoção ou que moram longe dos centros de saúde;
+* Profissionais da saúde que querem gerenciar melhor seus atendimentos;
+* Clínicas e consultórios que buscam modernizar seus processos.
+
