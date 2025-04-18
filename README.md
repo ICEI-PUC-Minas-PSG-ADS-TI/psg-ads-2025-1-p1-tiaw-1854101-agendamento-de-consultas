@@ -1,21 +1,30 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`AGENDAMENTO DE CONSULTAS`  
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`: 
+`ANALISE E DESENVOLVIMENTOS DE SISTEMAS`
 
-`SEMESTRE:`
+`SEMESTRE: 1 PERIODO `
 
-`OBJETIVO ODS:` > Inclua os numeros e a descrição do(s) objetivo(s) ODS da ONU que o Projeto vai atender. 
+`OBJETIVO:` 
+O objetivo principal é desenvolver um aplicativo completo e fácil de usar, que permita:
+
+* Agendar consultas presenciais ou online com médicos e outros profissionais de saúde;
+* Realizar consultas por vídeo chamada diretamente pelo app;
+* Solicitar e receber receitas e laudos médicos de forma digital;
+* Acompanhar o histórico de atendimentos e documentos, tudo em um só lugar.
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
+- Victor Eduardo F. Nunes
+- Fernando Silva Menezes
+- Charles Reis Francisco Mendes
+- Matheus Duarte Viana
+- Lucas Cassiano Nogueira Marques
+- Kailany Moreira Soares
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
 
 # Estrutura do Projeto
 
@@ -44,10 +53,3 @@ Este diretório armazena o código fonte do projeto e adota uma hierarquia
 básica de projetos Web simples, que utilizam as tecnologias HTML, CSS e
 JavaScript.
 
-### Links Úteis:
-
-Aprenda Markdown e use-o para documentar o projeto  
-
-> [Sintaxe básica de gravação e formatação no GitHub](https://guides.github.com/features/mastering-markdown/)
-
-> [Suporte Github](https://help.github.com/pt/github/writing-on-github/getting-started-with-writing-and-formatting-on-github)
