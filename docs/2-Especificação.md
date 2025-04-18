@@ -2,9 +2,6 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Contexto.md"> Documentação de Contexto</a></span>
 
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
 
 ## Personas
 
@@ -18,13 +15,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |-----------|---------------------------------------------------------------------------|----------------------------------------|
 |PACIENTE   | Quero receber notificações sobre consultas e horários de medicação        | Para obter atendimento sem precisar me deslocar.                |
 |PACIENTE   | Quero ter a opção de realizar consultas online com médicos                |Para evitar esquecimentos e seguir corretamente meu tratamento   |
-|MÉDICO     | Quero visualizar o histórico de atendimentos e exames dos meus pacientes  |Para acompanhar a recuperação do paciente com cautela e                                                                                       |e proximidade.                                                   |
+|MÉDICO     | Quero visualizar o histórico de atendimentos e exames dos meus pacientes  |Para acompanhar a recuperação do paciente com cautela e proximidade.   |
 |MÉDICO     | Quero lembretes de manter contato com pacientes de casos mais graves      |Para tomar decisões mais assertivas no diagnóstico e tratamento. |
 
 ## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
 ### Requisitos Funcionais
 
 Código	|Requisito	                                       |Prioridade |
@@ -73,9 +67,4 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
-
-
-> Enumere as restrições à sua solução. Lembre-se de que as restrições
-> geralmente limitam a solução candidata.
-> 
 
