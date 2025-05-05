@@ -1,3 +1,5 @@
+//Victor,Charles,Lucas, Fernando, MAtheus, Kailany//
+
 `Usuario={
   "id": "uuid",
   "nome": "string",
@@ -36,4 +38,40 @@ Mensagem{
   "tipo": "enum('chat-bot', 'direta')",
   "data_envio": "timestamp",
   "lida": "boolean"
+}
+
+CategoriaConsulta (ou Especialidade)
+{
+  "id": "uuid",
+  "nome": "string",
+  "descricao": "text",
+  "criado_em": "timestamp"
+}
+
+ LocalAtendimento
+
+  "id": "uuid",
+  "nome_clinica": "string",
+  "endereco": {
+    "rua": "string",
+    "numero": "string",
+    "bairro": "string",
+    "cidade": "string",
+    "estado": "string",
+    "cep": "string"
+  },
+  "telefone": "string",
+  "profissionais_ids": ["array de uuid"],
+  "ativo": "boolean"
+}
+
+Notificacao
+{
+  "id": "uuid",
+  "usuario_id": "uuid",
+  "tipo": "enum('sistema', 'mensagem', 'agendamento')",
+  "titulo": "string",
+  "mensagem": "text",
+  "lida": "boolean",
+  "data_envio": "timestamp"
 }`
