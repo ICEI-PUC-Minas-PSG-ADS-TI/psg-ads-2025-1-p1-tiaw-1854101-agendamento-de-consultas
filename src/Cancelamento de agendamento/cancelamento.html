@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cancelamento.css">
+    <title>Cancelamento de Agendamento</title>
+</head>
+<body>
+    <div class="cancelamento-container">
+        <h2>Cancelar Agendamento</h2>
+        <form id="cancelamentoForm">
+            <div class="input-group">
+                <label for="agendamentoId">ID do Agendamento:</label>
+                <input type="text" id="agendamentoId" required>
+            </div>
+            <div class="input-group">
+                <label for="motivo">Motivo do Cancelamento:</label>
+                <textarea id="motivo" required></textarea>
+            </div>
+            <button type="submit">Cancelar Agendamento</button>
+            <p id="mensagem" class="mensagem"></p>
+        </form>
+    </div>
+    <script src="cancelamento.js"></script>
+</body>
+</html>
