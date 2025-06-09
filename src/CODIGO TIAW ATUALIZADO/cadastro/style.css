@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1ea568; /* Fundo verde */
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    /*background-color: #285320;  Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px; /* Tamanho da fonte do label */
+    font-weight: bold; /* Negrito no label */
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px; /* Tamanho da fonte do input */
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #00308a; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamanho da fonte do botão */
+}
+
+button[type="submit"]:hover {
+    background-color: #b61530; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#errorMessages {
+    margin-top: 20px;
+    font-size: 18px; /* Tamanho da fonte da mensagem de erro */
+    color: #f00; /* Cor da mensagem de erro */
+}
+
+h1 {
+    font-size: 36px; /* Tamanho da fonte do título */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 20px;
+}

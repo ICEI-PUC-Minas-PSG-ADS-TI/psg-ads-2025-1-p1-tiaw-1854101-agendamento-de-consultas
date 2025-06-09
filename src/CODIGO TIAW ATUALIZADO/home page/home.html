@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClickMed - Agendamento de Consultas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo" aria-label="Logo ClickMed">ClickMed</div>
+        <nav aria-label="Menu de navegação principal">
+            <button type="button" onclick="alert('Redirecionando para cadastro')">Cadastrar</button>
+            <button type="button" onclick="alert('Redirecionando para login')">Login</button>
+            <a href="#ajuda">Central de Ajuda</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Agende sua consulta com facilidade</h1>
+        <p class="subtitle">A plataforma pensada para você, com simplicidade e confiança.</p>
+        <div class="search-container" role="search" aria-label="Barra de busca para consultas e médicos">
+            <input type="search" id="search" name="search" placeholder="Busque por médicos, especialidades ou clínicas" aria-label="Busca de médicos, especialidades ou clínicas" />
+        </div>
+        <button type="button" class="search-btn" onclick="alert('Iniciando busca...')">Buscar</button>
+
+        <section id="trust-section" aria-label="Benefícios e confiança">
+            <h2>Por que escolher a ClickMed?</h2>
+            <div id="benefits">
+                <div class="benefit" tabindex="0" aria-label="Fácil de usar: Interface simples para todos">
+                    Fácil de usar
+                    <p>Interface simples e intuitiva pensada especialmente para você.</p>
+                </div>
+                <div class="benefit" tabindex="0" aria-label="Atendimento rápido: Marque consultas em poucos passos">
+                    Atendimento rápido
+                    <p>Marque sua consulta em apenas alguns cliques.</p>
+                </div>
+                <div class="benefit" tabindex="0" aria-label="Profissionais qualificados: Médicos confiáveis e certificados">
+                    Profissionais qualificados
+                    <p>Médicos confiáveis e certificados para cuidar de você.</p>
+                </div>
+                <div class="benefit" tabindex="0" aria-label="Suporte dedicado: Estamos aqui para ajudar sempre que precisar">
+                    Suporte dedicado
+                    <p>Central de ajuda pronta para esclarecer suas dúvidas.</p>
+                </div>
+            </div>
+
+            <div id="trusted-logos" aria-label="Logos de parceiros confiáveis">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unimed_Logo.svg" alt="Logo Unimed" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/ANSP_logo.png" alt="Logo ANSP" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/ABRAMGE_logo.png" alt="Logo Abramge" />
+            </div>
+
+            <section id="testimonials" aria-label="Depoimentos de usuários">
+                <h3>O que nossos usuários dizem</h3>
+                <div class="testimonial-cards">
+                    <div class="testimonial" tabindex="0">
+                        <blockquote>"Com a ClickMed, consegui agendar minhas consultas sem complicação e com confiança. Recomendo!"</blockquote>
+                        <div class="testimonial-footer">
+                            <img src="" alt="Foto da Maria Silva" />
+                            <span>fulano</span>
+                        </div>
+                    </div>
+                    <div class="testimonial" tabindex="0">
+                        <blockquote>"Simples e fácil de usar, perfeito para quem não tem muita prática com tecnologia."</blockquote>
+                        <div class="testimonial-footer">
+                            <img src="" alt="Foto do João Souza" />
+                            <span>fulano</span>
+                        </div>
+                    </div>
+                    <div class="testimonial" tabindex="0">
+                        <blockquote>"Atendimento rápido e equipe muito atenciosa. Me sinto seguro usando a ClickMed."</blockquote>
+                        <div class="testimonial-footer">
+                            <img src="" alt="Foto da Ana Pereira" />
+                            <span>fulano</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="ajuda">
+        <p>Precisa de ajuda? Ligue para o nosso suporte ou acesse a Central de Ajuda.</p>
+        <p>© 2024 ClickMed - Todos os direitos reservados</p>
+        <p>
+            <a href="#">Política de Privacidade</a> |
+            <a href="#">Termos de Uso</a> |
+            <a href="#ajuda">Contato</a>
+        </p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Usuário</h1>
+        <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </header>
+    <main>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Nome Completo:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Data de Nascimento:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirme a Senha:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Aceito os <a href="#">termos de uso</a> e a <a href="#">política de privacidade</a>.
+                </label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+        <div id="errorMessages" style="color: red;"></div>
+    </main>
+    <script src="script.js">
+    // Função para salvar os dados do usuário em um arquivo JSON (localStorage)
+        function saveUser(data) {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push(data);
+            localStorage.setItem('users', JSON.stringify(users));
+        }
+        
+        // Função para verificar se o usuário existe pelo email e senha
+        function checkUser(email, password) {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            return users.find(user => user.email === email && user.password === password);
+        }
+        
+        // Função para verificar se o e-mail já está em uso
+        function checkEmail(email) {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            return users.find(user => user.email === email);
+        }
+        
+        // Manipula o formulário de cadastro, se existir na página
+        const registrationForm = document.getElementById('registrationForm');
+        if (registrationForm) {
+            registrationForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                const fullName = document.getElementById('fullName').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const cpf = document.getElementById('cpf').value.trim();
+                const dob = document.getElementById('dob').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const address = document.getElementById('address').value;
+                const terms = document.getElementById('terms').checked;
+        
+                if (checkEmail(email)) {
+                    alert('E-mail já está em uso!');
+                    return;
+                }
+        
+                if (password !== confirmPassword) {
+                    alert('As senhas não coincidem!');
+                    return;
+                }
+        
+                if (!terms) {
+                    alert('Você deve aceitar os termos de uso!');
+                    return;
+                }
+        
+                const userData = {
+                    fullName,
+                    email,
+                    phone,
+                    cpf,
+                    dob,
+                    password,
+                    address
+                };
+        
+                saveUser(userData);
+                alert('Cadastro realizado com sucesso! Você será redirecionado para a página de login.');
+                window.location.href = 'login.html';
+            });
+        }
+        
+        // Manipula o formulário de login, se existir na página
+        const loginForm = document.getElementById('loginForm');
+        if (loginForm) {
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+        
+                const email = document.getElementById('email').value.trim();
+                const password = document.getElementById('password').value;
+        
+                const user = checkUser(email, password);
+        
+                if (!user) {
+                    alert('E-mail ou senha incorretos!');
+                    return;
+                }
+        
+                alert('Login realizado com sucesso! Você será redirecionado à página de agendamento.')
+                window.location.href = 'agendamento/agendamento.html';
+            });
+        }
+        
+        </script>
+</body>
+</html>
