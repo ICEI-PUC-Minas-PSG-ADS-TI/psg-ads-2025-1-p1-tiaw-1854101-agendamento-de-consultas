@@ -59,12 +59,5 @@ Código	| Requisito	                                                            
 #RNF013	| "Deve ser feito em HTML, CSS, JS"	                                    |  Baixa
 #RNF014	| Deve permitir atualização sem perda de dados	                        |  Alta
 
-## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
 
