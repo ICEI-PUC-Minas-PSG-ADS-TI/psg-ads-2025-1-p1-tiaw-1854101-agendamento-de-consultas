@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Editar Dados de Cadastro</h2>
+    <form id="formCadastro">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone">
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha">
+
+      <button type="submit">Salvar Alterações</button>
+    </form>
+    <div id="mensagem"></div>
+  </div>
+
+  <script>
+    
+    const usuario = {
+      "nome": "Rafael Paulo França",
+      "email": "RafaelPFranca@gmail.com",
+      "telefone": "(11) 91234-5678",
+      "senha": "123456"
+    };
+
+    
+    window.onload = () => {
+      document.getElementById("nome").value = usuario.nome;
+      document.getElementById("email").value = usuario.email;
+      document.getElementById("telefone").value = usuario.telefone;
+      document.getElementById("senha").value = usuario.senha;
+    };
+
+    
+    document.getElementById("formCadastro").addEventListener("submit", function(e) {
+      e.preventDefault();
+      usuario.nome = document.getElementById("nome").value;
+      usuario.email = document.getElementById("email").value;
+      usuario.telefone = document.getElementById("telefone").value;
+      usuario.senha = document.getElementById("senha").value;
+
+      document.getElementById("mensagem").textContent = "Dados atualizados com sucesso!";
+      console.log("Dados atualizados:", usuario);
+    });
+  </script>
+</body>
+</html>
