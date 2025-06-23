@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Histórico de Consultas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; margin: 20px; background: #f8f8f8; }
+        h1 { color: #3366cc; text-align: center; }
+        .container { display: flex; justify-content: center; margin-bottom: 30px; }
+        .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 24px; min-width: 400px; }
+        .history-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .history-table th, .history-table td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+        .history-table th { background: #f0f0f0; }
+        .nav { text-align: center; margin-top: 30px; }
+        .nav a { color: #3366cc; text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Clinica Online</h1>
+    <div class="container">
+        <div class="card">
+            <h2>Histórico de Consultas</h2>
+            <table class="history-table" id="history-table">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Médico</th>
+                        <th>Especialidade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="pagamento.html">Ir para Pagamento</a>
+    </div>
+    <script>
+        const consultas = [
+            { data: '2025-03-12', hora: '09:30', medico: 'Dr. Silva', especialidade: 'Cardiologia', status: 'Concluída' },
+            { data: '2025-03-15', hora: '14:00', medico: 'Dr. Souza', especialidade: 'Dermatologia', status: 'Cancelada' },
+            { data: '2025-05-20', hora: '11:15', medico: 'Dra. Lima', especialidade: 'Pediatria', status: 'Agendada' },
+        ];
+        function loadHistory() {
+            const tbody = document.querySelector('#history-table tbody');
+            consultas.forEach(c => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${c.data}</td>
+                    <td>${c.hora}</td>
+                    <td>${c.medico}</td>
+                    <td>${c.especialidade}</td>
+                    <td>${c.status}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+        window.addEventListener('DOMContentLoaded', loadHistory);
+    </script>
+</body>
+</html>
