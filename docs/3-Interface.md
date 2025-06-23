@@ -123,6 +123,8 @@ Extras (opcional, mas recomendado):
 > páginas. Um wireframe web é uma ilustração semelhante do
 > layout de elementos fundamentais na interface.
 
+![image](https://github.com/user-attachments/assets/09495c57-60b8-407c-8e04-023138d4e6bd)
+
 
 
 > **Links Úteis**:
