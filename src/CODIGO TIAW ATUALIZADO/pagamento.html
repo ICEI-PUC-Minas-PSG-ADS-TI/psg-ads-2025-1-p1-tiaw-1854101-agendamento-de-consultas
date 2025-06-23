@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pagamento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; margin: 20px; background: #f8f8f8; }
+        h1 { color: #3366cc; text-align: center; }
+        .container { display: flex; justify-content: center; margin-bottom: 30px; }
+        .card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 24px; min-width: 400px; }
+        form { max-width: 400px; margin: 0 auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 24px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; border-radius: 4px; border: 1px solid #ccc; }
+        button { margin-top: 15px; padding: 10px 15px; background: #3366cc; color: #fff; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #254a91; }
+        .success { color: green; margin-top: 10px; }
+        .error { color: red; margin-top: 10px; }
+        .nav { text-align: center; margin-top: 30px; }
+        .nav a { color: #3366cc; text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Clinica Online</h1>
+    <div class="container">
+        <div class="card">
+            <h2>Pagamento com Cartão</h2>
+            <form id="payment-form">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <label for="card-holder">Nome no Cartão</label>
+                <input type="text" id="card-holder" placeholder="Nome do Titular" required>
+                <label for="expiry-date">Data de Validade:</label>
+                <input type="text" id="expiry-date" maxlength="5" placeholder="MM/AA" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" maxlength="3" placeholder="XXX" required>
+                <button type="submit">Pagar R$150,00</button>
+                <div id="payment-message"></div>
+            </form>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="historico.html">Ver Histórico de Consultas</a>
+    </div>
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const num = document.getElementById('card-number').value.replace(/\s+/g,'');
+            const nome = document.getElementById('card-holder').value.trim();
+            const validade = document.getElementById('expiry-date').value;
+            const cvv = document.getElementById('cvv').value;
+            const msgDiv = document.getElementById('payment-message');
+            msgDiv.textContent = '';
+            msgDiv.className = '';
+            if (!/^\d{16}$/.test(num)) {
+                msgDiv.textContent = 'Número do cartão inválido.';
+                msgDiv.className = 'error';
+                return;
+            }
+            if (nome.length < 3) {
+                msgDiv.textContent = 'Nome do titular inválido.';
+                msgDiv.className = 'error';
+                return;
+            }
+            if (!/^\d{2}\/\d{2}$/.test(validade)) {
+                msgDiv.textContent = 'Validade inválida. Use MM/AA.';
+                msgDiv.className = 'error';
+                return;
+            }
+            if (!/^\d{3}$/.test(cvv)) {
+                msgDiv.textContent = 'CVV inválido.';
+                msgDiv.className = 'error';
+                return;
+            }
+            msgDiv.textContent = 'Processando pagamento...';
+            setTimeout(() => {
+                msgDiv.textContent = 'Pagamento realizado com sucesso!';
+                msgDiv.className = 'success';
+                document.getElementById('payment-form').reset();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
