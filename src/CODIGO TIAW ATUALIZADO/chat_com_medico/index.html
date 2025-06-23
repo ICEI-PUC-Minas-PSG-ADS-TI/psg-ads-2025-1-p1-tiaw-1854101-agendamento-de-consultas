@@ -48,7 +48,7 @@
     function adicionarMensagem(remetente, texto) {
       const chatBox = document.getElementById("chatBox");
       const msg = document.createElement("div");
-      msg.classList.add("mensagem", remetente === "Pessoa 1" ? "esquerda" : "direita");
+      msg.classList.add("mensagem", remetente === "Medico" ? "esquerda" : "direita");
       msg.innerHTML = `<strong>${remetente}:</strong> ${texto}`;
       chatBox.appendChild(msg);
       chatBox.scrollTop = chatBox.scrollHeight;
